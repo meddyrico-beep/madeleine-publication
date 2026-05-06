@@ -62,3 +62,21 @@ El claim puede sonar como sobreafirmación científica si no se matiza.
 | C009 | Tomo III | Salida pública de claims | La salida pública debe excluir afirmaciones físicas, matemáticas o aplicadas que no tengan validación suficiente. | Editorial-científico | Política editorial sobria de Tomo III. | Revisar lenguaje final de cada PDF. | Bajo | Publicable |
 | C010 | Tomo III | Dossier externo de claims | El dossier externo debe ser más corto que los tomos y debe explicar qué se afirma, qué no se afirma y qué falta validar. | Editorial-científico | Tomo III contempla dossier, mapa público y política editorial. | Crear el dossier externo mínimo. | Bajo | Publicable |
 
+
+---
+
+## Lote 2 — Claims fundacionales derivados de Tomo I
+
+| ID | Tomo | Sección fuente | Claim exacto de auditoría | Tipo | Evidencia interna | Falta para validación externa | Riesgo | Estado |
+|---|---|---|---|---|---|---|---|---|
+| C011 | Tomo I | Base absorbida | La antigua Base Axiomática queda absorbida editorialmente por Tomo I, que funciona como fundamento público principal. | Editorial-fundacional | Tomo I integra el contenido basal y la base queda como soporte interno. | Ninguna externa; es decisión editorial interna. | Bajo | Publicable |
+| C012 | Tomo I | Origen canónico | sub₀ funciona como origen canónico de lectura, no como objeto físico ni punto absoluto del espacio clásico. | Fundacional | El corpus usa sub₀ como referencia estructural. | Formalizar traducción a notación matemática estándar. | Medio | Publicable con matiz |
+| C013 | Tomo I | Primitivos | Los primitivos del sistema deben leerse como condiciones de construcción interna, no como entidades físicas demostradas. | Fundacional | Tomo I trabaja con definiciones, axiomas y observaciones. | Separar explícitamente semántica interna y externa. | Bajo | Publicable |
+| C014 | Tomo I | Medida y doble registro | El doble registro distingue conteo y medida para evitar reducir toda lectura estructural a magnitudes continuas clásicas. | Fundacional-operativo | Tomo I formula medida, doble registro y lectura derivada. | Comparar con marcos clásicos de medida discreta/continua. | Medio | Interno por ahora |
+| C015 | Tomo I | Involución mínima | La involución mínima introduce una relación dual interna sin afirmar todavía simetría física externa. | Fundacional | Se presenta como mecanismo estructural basal. | Precisar propiedades algebraicas formales. | Medio | Publicable con matiz |
+| C016 | Tomo I | Plano carlesino | El plano carlesino organiza direcciones como canales de lectura, no como simple sistema cartesiano equivalente. | Fundacional | Tomo I distingue canales y lectura proyectada. | Formalizar equivalencia/no equivalencia con coordenadas clásicas. | Medio | Interno por ahora |
+| C017 | Tomo I | Trayectoria mínima | La trayectoria mínima permite leer continuidad estructural sin reducirla a posición aislada. | Fundacional | Tomo I privilegia trayectoria, lectura y acumulación. | Definir ejemplos reproducibles mínimos. | Medio | Publicable con matiz |
+| C018 | Tomo I | Lectura proyectada | Toda lectura proyectada debe declararse como derivada, no como primitiva del sistema. | Metodológico-fundacional | Tomo I separa primitivos y coordenadas derivadas. | Ninguna externa; requiere consistencia interna. | Bajo | Publicable |
+| C019 | Tomo I | Coherencia mínima | La coherencia mínima es una condición interna de lectura estructural, no una prueba de estabilidad física. | Fundacional | Tomo I define coherencia dentro del marco. | Conectar con métricas verificables si se quiere aplicación externa. | Medio | Publicable con matiz |
+| C020 | Tomo I | Régimen verificable | Un régimen verificable exige condiciones internas explícitas antes de cualquier afirmación externa. | Fundacional-metodológico | Tomo I termina con criterio mínimo de régimen verificable. | Diseñar protocolo de verificación reproducible. | Bajo | Publicable |
+
