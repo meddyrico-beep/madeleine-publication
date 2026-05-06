@@ -80,3 +80,24 @@ El claim puede sonar como sobreafirmación científica si no se matiza.
 | C019 | Tomo I | Coherencia mínima | La coherencia mínima es una condición interna de lectura estructural, no una prueba de estabilidad física. | Fundacional | Tomo I define coherencia dentro del marco. | Conectar con métricas verificables si se quiere aplicación externa. | Medio | Publicable con matiz |
 | C020 | Tomo I | Régimen verificable | Un régimen verificable exige condiciones internas explícitas antes de cualquier afirmación externa. | Fundacional-metodológico | Tomo I termina con criterio mínimo de régimen verificable. | Diseñar protocolo de verificación reproducible. | Bajo | Publicable |
 
+
+---
+
+## Lote 3 — Claims operativos derivados de Tomo II
+
+| ID | Tomo | Sección fuente | Claim exacto de auditoría | Tipo | Evidencia interna | Falta para validación externa | Riesgo | Estado |
+|---|---|---|---|---|---|---|---|---|
+| C021 | Tomo II | Apertura | Tomo II no redefine el fundamento, sino que organiza su paso hacia canon, transición y jerarquía operativa. | Editorial-operativo | Tomo II se apoya en Tomo I y prepara Tomo III. | Ninguna externa; es arquitectura editorial. | Bajo | Publicable |
+| C022 | Tomo II | Contrato operativo | Un contrato operativo fija cómo usar el marco sin convertir sus definiciones en resultados externos. | Operativo | Tomo II introduce condiciones de lectura y uso. | Convertir el contrato en checklist práctico. | Bajo | Publicable |
+| C023 | Tomo II | Transición de nivel | Una transición de nivel solo es válida si conserva trazabilidad con el nivel anterior. | Operativo | Tomo II organiza transiciones y preparación metodológica. | Formalizar reglas mínimas de transición. | Medio | Publicable con matiz |
+| C024 | Tomo II | Umbral operativo | Un umbral operativo marca cambio de régimen interno, no necesariamente cambio físico externo. | Operativo-fundacional | Tomo II distingue umbral, régimen y configuración. | Definir indicadores reproducibles de umbral. | Medio | Interno por ahora |
+| C025 | Tomo II | Jerarquía mínima | La jerarquía mínima ordena dependencias internas entre niveles sin afirmar una jerarquía natural externa. | Operativo | Tomo II formula jerarquía y articulación. | Precisar relación formal entre niveles. | Medio | Publicable con matiz |
+| C026 | Tomo II | Comparabilidad | Dos lecturas solo son comparables si comparten criterios mínimos de régimen, escala de lectura y trazabilidad. | Operativo-metodológico | Tomo II incluye criterio de comparabilidad. | Crear ejemplos comparativos verificables. | Bajo | Publicable |
+| C027 | Tomo II | Distinción operativa | La distinción operativa evita confundir variación interna con diferencia estructural relevante. | Operativo | Tomo II separa distinción, configuración y familia. | Definir umbrales o reglas de decisión. | Medio | Interno por ahora |
+| C028 | Tomo II | Configuración | Una configuración operativa es una forma organizada de lectura dentro del marco, no una entidad física por sí misma. | Operativo | Tomo II trabaja configuración y familia operativa. | Traducir configuración a estructura formal reproducible. | Medio | Publicable con matiz |
+| C029 | Tomo II | Familia operativa | Una familia operativa agrupa configuraciones por continuidad de criterios, no por semejanza intuitiva. | Operativo | Tomo II desarrolla familia, traducción y protocolo. | Crear taxonomía mínima de familias. | Medio | Interno por ahora |
+| C030 | Tomo II | Traducción entre niveles | La traducción entre niveles debe preservar pérdida, ganancia y cambio de lectura; no puede presentarse como equivalencia automática. | Operativo-metodológico | Tomo II dedica secciones a traducción y protocolización. | Formalizar reglas de traducción y casos límite. | Alto | Pendiente |
+| C031 | Tomo II | Protocolización mínima | La protocolización mínima permite transformar lectura interna en procedimiento repetible. | Metodológico | Tomo II prepara el paso a Tomo III. | Diseñar protocolo ejecutable y reproducible. | Medio | Publicable con matiz |
+| C032 | Tomo II | Trazabilidad operativa | Ninguna afirmación operativa debe separarse de su trazabilidad: fuente, transición, criterio y salida. | Metodológico | Tomo II culmina en preparación para Tomo III. | Aplicar trazabilidad a todos los claims reales. | Bajo | Publicable |
+| C033 | Tomo II | Preparación para Tomo III | Tomo II funciona como filtro previo: solo lo trazable y protocolizable debe avanzar a claims públicos. | Editorial-metodológico | Tomo II prepara explícitamente la entrada a Tomo III. | Revisar correspondencia sección por sección con Tomo III. | Bajo | Publicable |
+
