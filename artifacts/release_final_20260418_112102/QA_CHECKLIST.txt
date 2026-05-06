@@ -1,0 +1,31 @@
+QA FINAL — revisión visual mínima
+
+1. Portadas
+- título correcto
+- subtítulo correcto
+- autor
+- fecha
+- sin cortes raros
+
+2. Índices
+- numeración continua
+- títulos homogéneos
+- sin entradas duplicadas
+- sin símbolos raros en headings
+
+3. Cuerpo
+- fórmulas centradas y legibles
+- cortes de línea normales
+- headers/footers consistentes
+- capítulos empiezan bien
+
+4. Tipografía/exportación
+- buscar palabras partidas raro
+- buscar glifos extraños
+- buscar sub0/sub₀ según canon deseado
+- revisar copy/paste de una fórmula y un párrafo por tomo
+
+5. Empaque
+- PDFs con nombres limpios
+- ZIP final
+- snapshot

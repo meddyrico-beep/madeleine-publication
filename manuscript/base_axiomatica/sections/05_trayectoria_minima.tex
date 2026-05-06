@@ -1,0 +1,60 @@
+\chapter{Trayectoria mínima}
+
+\section{Sucesión estructural}
+\begin{definition}
+Una trayectoria mínima es una sucesión finita o infinita de estados
+\[
+\gamma = (p_0,p_1,p_2,\dots)
+\]
+tal que cada estado pertenece al dominio estructural declarado del sistema.
+\end{definition}
+
+\begin{observation}
+Esta definición fija una forma mínima de continuidad discreta. No impone todavía ley dinámica, métrica completa ni interpretación física del tránsito.
+\end{observation}
+
+\section{Estado inicial}
+\begin{definition}
+Toda trayectoria mínima puede declararse relativa a un estado inicial \(p_0\). Cuando no se indique otra referencia, el arranque canónico se entiende relativo a \subz.
+\end{definition}
+
+\begin{observation}
+La referencia inicial organiza lectura, comparación y acumulación. No obliga a que toda trayectoria efectiva comience en \subz, pero sí mantiene a \subz\ como origen canónico disponible.
+\end{observation}
+
+\section{Paso estructural}
+\begin{definition}
+Se llama paso estructural al tránsito entre dos estados consecutivos \(p_k\) y \(p_{k+1}\) de la trayectoria.
+\end{definition}
+
+\begin{definition}
+Una trayectoria es legible si cada paso estructural puede distinguirse dentro de la resolución mínima declarada por \eps\ y dentro de la ventana local \Win.
+\end{definition}
+
+\begin{observation}
+La legibilidad de la trayectoria depende de primitivas ya fijadas: origen, resolución y ventana. Por eso este bloque pertenece al núcleo y no a una capa meramente derivada.
+\end{observation}
+
+\section{Compatibilidad con oposición}
+\begin{definition}
+Una trayectoria mínima es compatible con la involución \Iop\ si la aplicación de \Iop\ a cada estado produce otra trayectoria formalmente bien definida dentro del mismo dominio declarado.
+\end{definition}
+
+\begin{observation}
+Esta compatibilidad no identifica la trayectoria con su opuesta. Solo declara que el sistema puede tratar ambas dentro de una misma gramática estructural.
+\end{observation}
+
+\section{Lectura por canales}
+\begin{definition}
+Si los estados de la trayectoria se expresan en la representación carlesina, cada paso puede leerse como variación de uno o más canales del 6-vector direccional.
+\end{definition}
+
+\begin{observation}
+La trayectoria no presupone todavía una ley de actualización fina de canales. Solo declara que el tránsito puede expresarse en esa base cuando dicha representación ha sido adoptada.
+\end{observation}
+
+\section{Cláusula de alcance}
+\begin{observation}
+La trayectoria mínima fija una gramática elemental de sucesión, paso y legibilidad. No valida por sí sola estabilidad global, periodicidad, coherencia o régimen dinámico completo.
+\end{observation}
+

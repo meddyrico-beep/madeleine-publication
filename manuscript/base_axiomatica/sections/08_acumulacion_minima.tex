@@ -1,0 +1,52 @@
+\chapter{Acumulación mínima}
+
+\section{Registro acumulativo}
+\begin{definition}
+Existe acumulación mínima cuando una sucesión de diferencias legibles puede conservarse como registro estructural sin colapsar de inmediato en indistinción.
+\end{definition}
+
+\begin{observation}
+La acumulación mínima no implica todavía memoria persistente ni estabilidad larga. Solo fija la posibilidad de que lo leído no desaparezca instantáneamente como si no hubiera sido registrado.
+\end{observation}
+
+\section{Acumulación sobre trayectoria}
+\begin{definition}
+Una trayectoria mínima admite acumulación si sus pasos estructurales pueden incorporarse sucesivamente a un registro compatible con la resolución \eps\ y con la ventana \Win.
+\end{definition}
+
+\begin{observation}
+Esta cláusula no exige todavía una ley cuantitativa completa de acumulación. Solo declara que el tránsito puede dejar rastro legible dentro del dominio local.
+\end{observation}
+
+\section{Acumulación y coherencia}
+\begin{definition}
+La acumulación mínima es compatible con la coherencia local cuando el registro de diferencias no destruye la legibilidad estructural de la configuración o trayectoria acumulada.
+\end{definition}
+
+\begin{observation}
+No toda acumulación preserva coherencia. Esta definición solo admite acumulación cuando el registro sigue siendo tratable sin contradicción inmediata dentro del dominio declarado.
+\end{observation}
+
+\section{Acumulación y oposición}
+\begin{definition}
+Una acumulación es compatible con la involución \Iop\ si el registro acumulado puede ser invertido sin perder de manera inmediata su gramática estructural básica.
+\end{definition}
+
+\begin{observation}
+Esta compatibilidad no fuerza simetría perfecta entre acumulación e inversión. Solo exige que la oposición siga siendo legible como transformación del registro.
+\end{observation}
+
+\section{Condición mínima de persistencia}
+\begin{definition}
+Se dice que una diferencia posee persistencia mínima si permanece registrable al menos a través de un paso adicional de lectura dentro de la resolución declarada.
+\end{definition}
+
+\begin{observation}
+La persistencia mínima es una condición débil. Su función aquí es distinguir entre diferencia instantánea no retenida y diferencia que alcanza un primer umbral de conservación.
+\end{observation}
+
+\section{Cláusula de alcance}
+\begin{observation}
+La acumulación mínima fija una posibilidad elemental de conservación estructural. No valida por sí sola memoria fuerte, invariancia de largo alcance ni régimen dinámico estabilizado.
+\end{observation}
+

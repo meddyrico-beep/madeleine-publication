@@ -1,0 +1,12 @@
+MADELEINE — Publication Manifest
+Build stamp: 20260418_110159
+
+Expected public artifacts:
+- Tomo I — Fundamento, blindaje y significado
+- Tomo II — Canon, transición y jerarquía dimensional
+- Tomo III — Método, demos y traducción a claims
+- Nota técnica de Base absorbida en Tomo I
+
+Status:
+- Content architecture frozen for publication polish
+- Focus shifted to beautification and packaging

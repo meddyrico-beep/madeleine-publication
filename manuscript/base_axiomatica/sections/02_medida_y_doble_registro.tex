@@ -1,0 +1,45 @@
+\chapter{Medida y doble registro}
+
+\section{Conteo y medida}
+\begin{definition}
+Si una diferencia pertenece al tránsito, se cuenta; si pertenece a la extensión, se mide. Si mezcla ambas capas, el sistema debe declarar primero el desdoblamiento de lectura.
+\end{definition}
+
+\begin{observation}
+Esta cláusula separa dos funciones que no deben confundirse: registrar paso y registrar magnitud. La mezcla no queda prohibida, pero sí sometida a declaración explícita.
+\end{observation}
+
+\section{Doble registro}
+\begin{definition}
+La medida estructural \Mmeas\ se expresa mediante un doble registro
+\[
+\Mmeas := (n,\delta),
+\]
+donde \(n\) representa el conteo externo y \(\delta\) la subfase interna del proceso de lectura.
+\end{definition}
+
+\begin{definition}
+Si se requiere una magnitud inducida, se admite la expresión
+\[
+|\Mmeas| := n + \delta \cdot \eps.
+\]
+\end{definition}
+
+\begin{observation}
+La magnitud inducida no reemplaza al doble registro. Solo proporciona una lectura derivada cuando la comparación de estados lo exige.
+\end{observation}
+
+\section{Regla mínima de actualización}
+\begin{definition}
+La subfase interna \(\delta\) evoluciona dentro del rango discreto declarado por el sistema. Cuando la subfase reinicia su ciclo, el conteo externo \(n\) se incrementa en una unidad.
+\end{definition}
+
+\begin{observation}
+Esta regla fija una medida con espesor interno. No equivale todavía a una dinámica completa, pero sí establece una forma mínima de acumulación legible.
+\end{observation}
+
+\section{Cláusula de alcance}
+\begin{observation}
+La introducción del doble registro fija una gramática mínima para contar y medir sin colapsar ambas operaciones. No valida por sí sola todos los regímenes posteriores que dependan de medición estructural.
+\end{observation}
+

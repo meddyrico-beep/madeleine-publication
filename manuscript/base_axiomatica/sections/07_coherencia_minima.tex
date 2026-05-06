@@ -1,0 +1,52 @@
+\chapter{Coherencia mínima}
+
+\section{Compatibilidad local}
+\begin{definition}
+Una configuración posee coherencia mínima dentro de una ventana \Win\ si sus componentes pueden ser leídas, comparadas y mantenidas sin contradicción estructural inmediata en el dominio declarado.
+\end{definition}
+
+\begin{observation}
+La coherencia mínima no equivale a estabilidad global ni a clausura completa. Solo fija una condición local de compatibilidad legible entre los elementos presentes.
+\end{observation}
+
+\section{Coherencia de trayectoria}
+\begin{definition}
+Una trayectoria mínima es coherente en sentido local si sus pasos estructurales pueden leerse sucesivamente dentro de la resolución \eps\ y de la ventana \Win\ sin pérdida inmediata de diferenciación.
+\end{definition}
+
+\begin{observation}
+Esta definición no exige periodicidad, equilibrio ni persistencia prolongada. Exige únicamente que el tránsito no colapse de forma instantánea la legibilidad del recorrido.
+\end{observation}
+
+\section{Coherencia y oposición}
+\begin{definition}
+Una configuración es compatible con la coherencia mínima respecto de la involución \Iop\ si la inversión declarada conserva una gramática estructural legible dentro del mismo dominio.
+\end{definition}
+
+\begin{observation}
+La oposición no destruye necesariamente coherencia. Puede seguir siendo legible siempre que la estructura admita inversión sin contradicción inmediata.
+\end{observation}
+
+\section{Coherencia y proyección}
+\begin{definition}
+La lectura proyectada de una configuración o trayectoria es coherente en sentido derivado si puede obtenerse a partir de la lectura primitiva sin ambigüedad local incompatible con el dominio declarado.
+\end{definition}
+
+\begin{observation}
+La coherencia derivada depende de la coherencia de la estructura primitiva y no la sustituye.
+\end{observation}
+
+\section{Condición mínima de fallo}
+\begin{definition}
+Se considera que una configuración pierde coherencia mínima cuando, dentro de la ventana \Win, deja de ser posible distinguir de forma legible sus componentes, sus pasos o sus oposiciones bajo la resolución declarada.
+\end{definition}
+
+\begin{observation}
+Esta condición de fallo es local. No implica todavía diagnóstico completo del régimen ni tipología final de colapso.
+\end{observation}
+
+\section{Cláusula de alcance}
+\begin{observation}
+La coherencia mínima fija una condición local de lectura compatible entre estructura, trayectoria, oposición y proyección. No valida por sí sola acumulación estable, memoria persistente ni régimen dinámico completo.
+\end{observation}
+

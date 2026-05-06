@@ -1,10 +1,10 @@
 \usepackage[spanish,es-nodecimaldot]{babel}
 \usepackage{fontspec}
-\usepackage{unicode-math}
 \setmainfont{Latin Modern Roman}
-\setmathfont{Latin Modern Math}
 \usepackage[a4paper,margin=2.8cm]{geometry}
-\usepackage{amsmath,amsthm,amssymb,mathtools}
+\usepackage{amsmath,amsthm,mathtools}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
 \usepackage{microtype}
 \usepackage{hyperref}
 \usepackage{bookmark}
@@ -25,3 +25,68 @@
 \newtheorem{lemma}[definition]{Lema}
 \newtheorem{corollary}[definition]{Corolario}
 \newtheorem{observation}[definition]{Observación}
+
+
+
+% --- MADELEINE publication polish ---
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{xcolor}
+
+% Espaciado general más aireado
+\setlength{\parskip}{0.45em}
+\setlength{\parindent}{0pt}
+
+% Encabezados sobrios
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Apertura de capítulos
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}
+  {\filright\Large Capítulo \thechapter}
+  {0.6em}
+  {\filright}
+  [\vspace{0.6em}\titlerule]
+
+\titlespacing*{\chapter}{0pt}{0.5em}{1.2em}
+
+% Secciones
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection.}{0.5em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}
+  {\thesubsection.}{0.5em}{}
+
+% ToC más respirable
+\setcounter{tocdepth}{2}
+
+% Metadatos PDF sobrios por defecto
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  citecolor=black,
+  pdfauthor={David Rico Ochoa},
+  pdftitle={MADELEINE},
+  pdfsubject={Corpus editorial MADELEINE},
+  pdfcreator={XeLaTeX},
+  pdfproducer={XeLaTeX}
+}
+% --- end MADELEINE publication polish ---
+
+
+% --- MADELEINE final text hygiene ---
+\pretolerance=1000
+\tolerance=2000
+\emergencystretch=2em
+\hyphenpenalty=7000
+\exhyphenpenalty=7000
+% --- end MADELEINE final text hygiene ---

@@ -22,3 +22,17 @@ artifacts/snapshots/*.txt
 .idea/
 .DS_Store
 Thumbs.db
+
+# Publication repo hygiene
+backup/
+artifacts/snapshots/
+artifacts/release_*/
+!artifacts/release_final_*/
+artifacts/*.zip
+**/main.pdf
+*.bak
+*.bak_*
+__pycache__/
+.pytest_cache/
+*.tmp
+*.temp

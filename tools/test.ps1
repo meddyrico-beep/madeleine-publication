@@ -9,7 +9,7 @@ foreach ($f in $files) {
     if ($raw -match 'â€|â€™|â€œ|â€�|Ã|�|ç|ün') {
         $errors += "Mojibake: $($f.FullName)"
     }
-    if ($raw -match 'TODO|FIXME|PLACEHOLDER|Insertar/pegar aquí|PENDIENTE') {
+    if ($raw -cmatch '(?-i:\bTODO\b|\bFIXME\b|\bPLACEHOLDER\b|\bPENDIENTE\b|Insertar/pegar aquí)') {
         $errors += "Placeholder: $($f.FullName)"
     }
 }
@@ -20,3 +20,6 @@ if ($errors.Count -gt 0) {
 }
 
 Write-Host "OK: sin errores bloqueantes."
+
+
+
