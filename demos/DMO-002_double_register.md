@@ -245,3 +245,189 @@ La siguiente prueba de DMO-002 deberá abandonar los cuatro ejemplos seleccionad
 - cuántas colisiones produce la proyección a \(\delta\);
 - cuánto poder discriminante añade el par \((n,\delta)\);
 - bajo qué restricciones podrían aparecer dependencias entre ambos registros.
+
+---
+
+## Endurecimiento exhaustivo
+
+La prueba mínima de cuatro historias fue ampliada mediante:
+
+`demos/DMO-002_sweep.py`
+
+El barrido enumera exhaustivamente todas las historias:
+
+\[
+H=(0,x_1,\ldots,x_n),
+\]
+
+con:
+
+\[
+x_i\in\{0,1,2,3,4\},
+\qquad
+1\le n\le6.
+\]
+
+El número total de historias examinadas fue:
+
+\[
+5^1+5^2+5^3+5^4+5^5+5^6
+=
+19530.
+\]
+
+### Cardinalidades observadas
+
+Se obtuvieron:
+
+\[
+|\{n\}|=6,
+\]
+
+\[
+|\{\delta\}|=25,
+\]
+
+y:
+
+\[
+|\{(n,\delta)\}|=90.
+\]
+
+Por tanto, el registro conjunto separa más clases que cualquiera de sus proyecciones:
+
+\[
+90>25>6.
+\]
+
+En términos relativos:
+
+\[
+\frac{90}{6}=15
+\]
+
+y:
+
+\[
+\frac{90}{25}=3.6.
+\]
+
+El par \((n,\delta)\) distingue así 15 veces más clases que el conteo aislado y 3.6 veces más que la medida aislada dentro del dominio enumerado.
+
+---
+
+## Estructura observada por conteo
+
+El número de valores de medida observados para cada conteo fue:
+
+| n | valores distintos de delta |
+|---|---:|
+| 1 | 5 |
+| 2 | 9 |
+| 3 | 13 |
+| 4 | 17 |
+| 5 | 21 |
+| 6 | 25 |
+
+En el dominio examinado aparece el patrón:
+
+\[
+|\Delta_n|=4n+1.
+\]
+
+Esta regularidad es observacional dentro del barrido.
+
+Todavía no se eleva aquí a teorema general.
+
+---
+
+## No-determinación exhaustiva
+
+El barrido confirma la existencia de múltiples valores de delta para un mismo n.
+
+Por tanto:
+
+\[
+n\not\Rightarrow\delta.
+\]
+
+También confirma que numerosos valores de delta aparecen asociados a diferentes valores de n.
+
+Por tanto:
+
+\[
+\delta\not\Rightarrow n.
+\]
+
+Las dos reducciones funcionales quedan rechazadas en el dominio exhaustivamente enumerado.
+
+---
+
+## Lectura informacional
+
+Usando distribución uniforme sobre las 19530 historias enumeradas se obtuvo:
+
+\[
+H(n)=0.901426\ \text{bits},
+\]
+
+\[
+H(\delta)=3.698883\ \text{bits},
+\]
+
+\[
+H(n,\delta)=4.537376\ \text{bits}.
+\]
+
+Las entropías condicionales fueron:
+
+\[
+H(\delta\mid n)=3.635950\ \text{bits}>0,
+\]
+
+y:
+
+\[
+H(n\mid\delta)=0.838494\ \text{bits}>0.
+\]
+
+Por tanto, conocer completamente una de las dos coordenadas no elimina la incertidumbre sobre la otra bajo esta distribución.
+
+---
+
+## Precaución sobre las entropías
+
+La enumeración uniforme sobre historias no genera una distribución uniforme sobre n.
+
+Los valores grandes de n contienen muchas más historias porque el número de secuencias crece como:
+
+\[
+5^n.
+\]
+
+Por ello, las entropías anteriores son propiedades de esta distribución concreta y no invariantes universales del doble registro.
+
+La no-determinación funcional, en cambio, no depende de este sesgo probabilístico: basta la existencia de historias con igual n y distinto delta, y viceversa.
+
+---
+
+## Resultado endurecido de DMO-002
+
+DMO-002 dispone ahora de:
+
+1. contraejemplos mínimos explícitos;
+2. comprobaciones automáticas mediante `assert`;
+3. barrido exhaustivo de 19530 historias;
+4. no-determinación en ambas direcciones;
+5. medida cuantitativa de información residual;
+6. comparación del poder discriminante de n, delta y (n,delta).
+
+Estado:
+
+**CONSTRUIDA — INTERNA — REPRODUCIBLE — BARRIDO EXHAUSTIVO**
+
+La evidencia apoya una versión restringida de C014:
+
+> En el dominio y operacionalización de DMO-002, conteo y medida constituyen registros no redundantes: ninguno determina al otro y su registro conjunto conserva distinciones que cada registro aislado pierde.
+
+No se afirma todavía irreductibilidad universal.
