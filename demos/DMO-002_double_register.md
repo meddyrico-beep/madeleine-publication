@@ -431,3 +431,114 @@ La evidencia apoya una versión restringida de C014:
 > En el dominio y operacionalización de DMO-002, conteo y medida constituyen registros no redundantes: ninguno determina al otro y su registro conjunto conserva distinciones que cada registro aislado pierde.
 
 No se afirma todavía irreductibilidad universal.
+
+---
+
+## Prueba de robustez con distribución equilibrada por n
+
+Se añadió:
+
+`demos/DMO-002_balanced.py`
+
+El barrido utiliza las mismas 19530 historias del dominio exhaustivo, pero modifica su ponderación probabilística.
+
+Cada valor:
+
+\[
+n\in\{1,2,3,4,5,6\}
+\]
+
+recibe peso total:
+
+\[
+P(n)=\frac{1}{6}.
+\]
+
+Condicionado a cada valor de \(n\), todas las historias correspondientes reciben el mismo peso.
+
+Esto elimina el predominio combinatorio de las historias largas presente en la enumeración uniforme original.
+
+### Resultado
+
+Se obtuvo:
+
+\[
+H(n)=2.584963\ \text{bits},
+\]
+
+\[
+H(\delta)=3.792081\ \text{bits},
+\]
+
+\[
+H(n,\delta)=5.733477\ \text{bits}.
+\]
+
+Las entropías condicionales permanecen estrictamente positivas:
+
+\[
+H(\delta\mid n)=3.148514\ \text{bits}>0,
+\]
+
+\[
+H(n\mid\delta)=1.941396\ \text{bits}>0.
+\]
+
+Por tanto, la no-redundancia informacional no desaparece al equilibrar el peso de las distintas longitudes.
+
+### Dependencia sin determinación
+
+La información mutua es:
+
+\[
+I(n;\delta)
+=
+H(n)+H(\delta)-H(n,\delta)
+\approx
+0.643567\ \text{bits}.
+\]
+
+Esto muestra que los registros no son estadísticamente independientes bajo esta distribución.
+
+Sin embargo:
+
+\[
+H(\delta\mid n)>0
+\]
+
+y:
+
+\[
+H(n\mid\delta)>0,
+\]
+
+por lo que ninguno determina completamente al otro.
+
+La lectura correcta para DMO-002 es, por tanto:
+
+> los registros presentan dependencia estadística, pero mantienen información propia no recuperable completamente desde la otra coordenada.
+
+### Resultado de robustez
+
+La conclusión restringida de DMO-002 sobrevive a dos ponderaciones distintas:
+
+1. distribución uniforme sobre las 19530 historias;
+2. distribución equilibrada por \(n\).
+
+Esto reduce la posibilidad de que la no-redundancia informacional observada sea únicamente un artefacto del predominio combinatorio de historias largas.
+
+### Límite vigente
+
+La prueba sigue perteneciendo a un dominio finito y a una definición concreta de:
+
+\[
+n(H)
+\]
+
+y:
+
+\[
+\delta(H).
+\]
+
+No demuestra todavía una irreductibilidad universal de contar y medir.
