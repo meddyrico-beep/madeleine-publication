@@ -38,7 +38,7 @@ El claim no debe publicarse como resultado hasta compararse con datos, teoría e
 | C005 | La tabla de claims evita confundir concepto con demostración. | Publicable | CLAIMS_TABLE y CLAIMS_AUDIT_SUMMARY | notes/ | Separación editorial-científica | No valida matemáticamente cada claim | Revisión externa de tabla | Publicable |
 | C006 | Un claim necesita formulación, ubicación, evidencia, fallo y riesgo. | Publicable | CLAIMS_AUDIT_SUMMARY | notes/ | Criterio mínimo de auditoría | No establece métricas cuantitativas | Rubrica externa | Publicable |
 | C011 | La Base Axiomática queda absorbida por Tomo I. | Publicable | Nota interna de base absorbida | internal/base_axiomatica.pdf | Decisión editorial trazable | No es claim científico externo | Ninguna | Publicable |
-| C012 | sub₀ es origen canónico de lectura. | Publicable con matiz | Canon notacional verificado sin sub0 textual | Tomo I / fuentes .tex | Consistencia simbólica interna | No define objeto físico | Formalización matemática estándar | Publicable con matiz |
+| C012 | sub₀ es origen canónico de lectura. | Publicable con matiz | DMO-001 construida | demos/DMO-001_sub0_origen_lectura.md + Tomo I | Referencia canónica interna, lectura relativa e invariancia mínima de etiquetado | No define objeto físico ni valida una geometría externa | Formalización matemática estándar y comparación externa | Publicable con matiz |
 | C014 | Doble registro distingue conteo y medida. | Interno | Pendiente de ejemplo mínimo | Tomo I | Define separación conceptual | No prueba superioridad frente a medida clásica | Ejemplo reproducible discreto/continuo | Interno |
 | C016 | Plano carlesino organiza direcciones como canales. | Interno | Pendiente de demo geométrica mínima | Tomo I | Define lectura direccional interna | No demuestra no equivalencia cartesiana formal | Comparación con coordenadas clásicas | Interno |
 | C020 | Régimen verificable exige condiciones internas explícitas. | Publicable | Criterio de régimen verificable | Tomo I | Cierra fundamento con condición de control | No valida regímenes concretos | Protocolo reproducible | Publicable |
@@ -55,7 +55,7 @@ El claim no debe publicarse como resultado hasta compararse con datos, teoría e
 
 | Demo ID | Nombre | Claims relacionados | Estado | Prioridad |
 |---|---|---|---|---|
-| DMO-001 | Demo mínima de sub₀ como origen de lectura | C012 | Pendiente | Alta |
+| DMO-001 | Demo mínima de sub₀ como origen de lectura | C012 | Construida — interna | Alta |
 | DMO-002 | Demo de doble registro conteo/medida | C014 | Pendiente | Alta |
 | DMO-003 | Demo de plano carlesino como canales direccionales | C016 | Pendiente | Alta |
 | DMO-004 | Demo de régimen verificable mínimo | C020 | Pendiente | Alta |
@@ -80,3 +80,5 @@ Todo claim sin demo, con riesgo alto o con lenguaje de equivalencia fuerte debe 
 ## Próximo paso
 
 Construir las demos mínimas DMO-001 a DMO-004 antes de ampliar claims fuertes.
+
+
