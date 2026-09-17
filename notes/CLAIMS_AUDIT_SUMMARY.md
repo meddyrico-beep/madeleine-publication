@@ -73,7 +73,7 @@ Estos deben quedarse dentro de la arquitectura interna hasta que tengan formaliz
 
 ## Tomo I
 
-- C014 — El doble registro distingue conteo y medida para evitar reducir toda lectura estructural a magnitudes continuas clásicas.
+- C014 — Contar y medir son operaciones irreductibles entre sí: la cronología se cuenta, la trayectoria se mide y la historia exige ambas.
 - C016 — El plano carlesino organiza direcciones como canales de lectura, no como simple sistema cartesiano equivalente.
 
 ## Tomo II
