@@ -39,7 +39,7 @@ El claim no debe publicarse como resultado hasta compararse con datos, teoría e
 | C006 | Un claim necesita formulación, ubicación, evidencia, fallo y riesgo. | Publicable | CLAIMS_AUDIT_SUMMARY | notes/ | Criterio mínimo de auditoría | No establece métricas cuantitativas | Rubrica externa | Publicable |
 | C011 | La Base Axiomática queda absorbida por Tomo I. | Publicable | Nota interna de base absorbida | internal/base_axiomatica.pdf | Decisión editorial trazable | No es claim científico externo | Ninguna | Publicable |
 | C012 | sub₀ es origen canónico de lectura. | Publicable con matiz | DMO-001 construida | demos/DMO-001_subzero_origen_lectura.md + Tomo I | Referencia canónica interna, lectura relativa e invariancia mínima de etiquetado | No define objeto físico ni valida una geometría externa | Formalización matemática estándar y comparación externa | Publicable con matiz |
-| C014 | Contar y medir son irreductibles; la historia exige ambos registros. | Interno | DMO-002 pendiente | Documento Madre v0.2 + Tomo I | Fija la separación canónica entre cronología y trayectoria | No demuestra todavía que ambos registros sean matemáticamente no redundantes fuera del marco | Construir pares que impidan recuperar un registro desde el otro y comparar con codificación colapsada | Interno |
+| C014 | Contar y medir son irreductibles; la historia exige ambos registros. | Interno | DMO-002 construida y barrida exhaustivamente | demos/DMO-002_double_register.md + demos/DMO-002_double_register.py + demos/DMO-002_sweep.py | En el dominio ensayado, n no determina delta, delta no determina n y el par (n,delta) conserva más distinciones que cada proyección | No demuestra irreductibilidad universal de toda noción de contar y medir | Ampliar dominios, equilibrar distribución por n y buscar formulación analítica | Interno |
 | C016 | Plano carlesino organiza direcciones como canales. | Interno | Pendiente de demo geométrica mínima | Tomo I | Define lectura direccional interna | No demuestra no equivalencia cartesiana formal | Comparación con coordenadas clásicas | Interno |
 | C020 | Régimen verificable exige condiciones internas explícitas. | Publicable | Criterio de régimen verificable | Tomo I | Cierra fundamento con condición de control | No valida regímenes concretos | Protocolo reproducible | Publicable |
 | C023 | Transición válida conserva trazabilidad con nivel anterior. | Publicable con matiz | Arquitectura Tomo II | Tomo II | Orden operativo interno | No formaliza toda transición | Reglas mínimas de transición | Publicable con matiz |
@@ -56,7 +56,7 @@ El claim no debe publicarse como resultado hasta compararse con datos, teoría e
 | Demo ID | Nombre | Claims relacionados | Estado | Prioridad |
 |---|---|---|---|---|
 | DMO-001 | Demo mínima de sub₀ como origen de lectura | C012 | Construida — interna | Alta |
-| DMO-002 | Demo de doble registro conteo/medida | C014 | Pendiente | Alta |
+| DMO-002 | Demo de doble registro conteo/medida | C014 | Construida — interna — reproducible — barrido exhaustivo | Alta |
 | DMO-003 | Demo de plano carlesino como canales direccionales | C016 | Pendiente | Alta |
 | DMO-004 | Demo de régimen verificable mínimo | C020 | Pendiente | Alta |
 | DMO-005 | Demo de comparabilidad entre lecturas | C026 | Pendiente | Media |
