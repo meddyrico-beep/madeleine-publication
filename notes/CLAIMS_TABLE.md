@@ -78,7 +78,7 @@ El claim puede sonar como sobreafirmación científica si no se matiza.
 | C017 | Tomo I | Trayectoria mínima | La trayectoria mínima permite leer continuidad estructural sin reducirla a posición aislada. | Fundacional | Tomo I privilegia trayectoria, lectura y acumulación. | Definir ejemplos reproducibles mínimos. | Medio | Publicable con matiz |
 | C018 | Tomo I | Lectura proyectada | Toda lectura proyectada debe declararse como derivada, no como primitiva del sistema. | Metodológico-fundacional | Tomo I separa primitivos y coordenadas derivadas. | Ninguna externa; requiere consistencia interna. | Bajo | Publicable |
 | C019 | Tomo I | Coherencia mínima | La coherencia mínima es una condición interna de lectura estructural, no una prueba de estabilidad física. | Fundacional | Tomo I define coherencia dentro del marco. | Conectar con métricas verificables si se quiere aplicación externa. | Medio | Publicable con matiz |
-| C020 | Tomo I | Régimen verificable | Un régimen verificable exige condiciones internas explícitas antes de cualquier afirmación externa. | Fundacional-metodológico | Tomo I termina con criterio mínimo de régimen verificable. | Diseñar protocolo de verificación reproducible. | Bajo | Publicable |
+| C020 | Tomo I | Régimen verificable | Un régimen verificable exige condiciones internas explícitas antes de cualquier afirmación externa. | Fundacional-metodológico | DMO-004: gate ejecutable con siete criterios explícitos, ablación individual y barrido exhaustivo de 128 configuraciones | El gate formaliza el criterio de aceptación interno; no demuestra que una candidata concreta satisfaga sus entradas ni implica validación física externa | Bajo | Publicable |
 
 
 ---
