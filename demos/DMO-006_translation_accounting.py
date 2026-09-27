@@ -423,6 +423,11 @@ print(
 )
 
 
+print(
+    "Caso 6: una fibra de tamano tres separa exceso colapsado "
+    "de numero de pares indistinguibles."
+)
+
 print()
 print("RESULTADO DMO-006")
 print("=" * 76)
