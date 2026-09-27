@@ -74,7 +74,7 @@ Estos deben quedarse dentro de la arquitectura interna hasta que tengan formaliz
 ## Tomo I
 
 - C014 — Contar y medir son operaciones irreductibles entre sí: la cronología se cuenta, la trayectoria se mide y la historia exige ambas.
-- C016 — El plano carlesino organiza direcciones como canales de lectura, no como simple sistema cartesiano equivalente.
+- C016 — Los seis canales conservan información adicional respecto de su proyección cartesiana únicamente cuando retienen grados de libertad no determinados por las diferencias entre canales opuestos; bajo exclusividad son equivalentes a una codificación cartesiana signo-magnitud.
 
 ## Tomo II
 
