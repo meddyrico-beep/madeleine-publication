@@ -81,6 +81,7 @@ Estos deben quedarse dentro de la arquitectura interna hasta que tengan formaliz
 - C024 — Un umbral operativo marca cambio de régimen interno, no necesariamente cambio físico externo.
 - C027 — La distinción operativa evita confundir variación interna con diferencia estructural relevante.
 - C029 — Una familia operativa agrupa configuraciones por continuidad de criterios.
+- C030 — Una traducción entre niveles debe declarar pérdida de distinciones, alcance de la imagen y cambio de representación; una ampliación derivada no constituye información independiente nueva y la traducción no implica equivalencia automática.
 
 ## Tomo III
 
@@ -90,15 +91,9 @@ Estos deben quedarse dentro de la arquitectura interna hasta que tengan formaliz
 
 # 4. Claims pendientes o de riesgo alto
 
-Estos no deben salir como afirmaciones públicas todavía.
+En este corte no queda ningún claim en esta categoría.
 
-- C030 — La traducción entre niveles debe preservar pérdida, ganancia y cambio de lectura; no puede presentarse como equivalencia automática.
-
-Razón:
-Este claim es importante, pero tiene riesgo alto porque puede sonar a equivalencia formal entre niveles si no se define una regla matemática precisa de traducción.
-
-Estado recomendado:
-Pendiente hasta formalizar reglas de traducción, casos límite y pérdida de información.
+C030 fue reclasificado como interno con resultado formal restringido después de formalizar en DMO-006 la contabilidad de traducción y sus casos límite.
 
 ---
 

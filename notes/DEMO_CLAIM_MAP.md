@@ -45,7 +45,7 @@ El claim no debe publicarse como resultado hasta compararse con datos, teoría e
 | C023 | Transición válida conserva trazabilidad con nivel anterior. | Publicable con matiz | Arquitectura Tomo II | Tomo II | Orden operativo interno | No formaliza toda transición | Reglas mínimas de transición | Publicable con matiz |
 | C024 | Umbral operativo marca cambio de régimen interno. | Interno | Pendiente de indicador | Tomo II | Define concepto operativo | No demuestra umbral físico externo | Métrica/indicador reproducible | Interno |
 | C026 | Dos lecturas comparables requieren criterios comunes. | Publicable | DMO-005 construida y formalizada | demos/DMO-005_comparability_gate.py + demos/DMO-005_comparability_gate.md | Se define un contrato K(L) y la comparabilidad L1~L2 si K(L1)=K(L2); se verifican reflexividad, simetría y transitividad y se bloquean comparaciones con escala, firma, profundidad, gate o trazabilidad incompatibles | No demuestra equivalencia física ni comparabilidad entre contratos distintos | Formalizar traducciones entre clases de comparabilidad declarando pérdida, ganancia y cambio de lectura | Publicable |
-| C030 | Traducción entre niveles no es equivalencia automática. | Pendiente | Sin demo suficiente | Tomo II | Señala riesgo metodológico | No formaliza pérdida/ganancia | Reglas formales y casos límite | Pendiente |
+| C030 | La traducción entre niveles requiere contabilidad explícita de colapso, alcance y cambio de representación; no es equivalencia automática. | Interno con resultado formal restringido | DMO-006 construida y formalizada | demos/DMO-006_translation_accounting.py + demos/DMO-006_translation_accounting.md | Se formalizan fibras, exceso colapsado, pares indistinguibles y destinos no alcanzados; se distinguen biyección, coarse-graining, embedding derivado y pérdida por proyección | No demuestra equivalencia dinámica, algebraica, geométrica o física ni cubre todavía traducciones generales o infinitas | Extender la contabilidad a estructuras adicionales y estudiar qué debe preservarse en traducciones dinámicas reales de MADELEINE | Interno |
 | C032 | Toda afirmación operativa exige trazabilidad. | Publicable | Tomo II + Tomo III | Tomo II / Tomo III | Regla de control editorial | No valida afirmaciones concretas | Aplicación claim por claim | Publicable |
 | C008 | Relación demo-claim debe ser explícita. | Interno | Este mapa demo-claim | notes/DEMO_CLAIM_MAP.md | Empieza trazabilidad demo-claim | Aún no completa demos reales | Completar tabla con archivos y evidencia | Interno por ahora |
 
@@ -60,7 +60,7 @@ El claim no debe publicarse como resultado hasta compararse con datos, teoría e
 | DMO-003 | Demo de plano carlesino como canales direccionales | C016 | Construida — reproducible — formalizada — condición de equivalencia demostrada | Alta |
 | DMO-004 | Demo de régimen verificable mínimo | C020 | Construida — reproducible — gate explícito — barrido exhaustivo 128/128 | Alta |
 | DMO-005 | Demo de comparabilidad entre lecturas | C026 | Construida — reproducible — contrato formal — relación de equivalencia verificada | Media |
-| DMO-006 | Demo de transición entre niveles con pérdida/ganancia | C030 | Pendiente | Alta |
+| DMO-006 | Demo de transición entre niveles con pérdida/ganancia | C030 | Construida — reproducible — contabilidad formal finita — seis casos límite | Alta |
 | DMO-007 | Demo de tabla demo-claim aplicada a un caso real interno | C008 | En construcción | Alta |
 
 ---
