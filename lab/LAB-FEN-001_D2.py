@@ -941,6 +941,22 @@ def write_outputs(
         ),
     }
 
+    structure_json = dict(
+        structure
+    )
+
+    structure_json["family_sizes"] = {
+        f"{a},{b}": value
+        for (a, b), value
+        in structure["family_sizes"].items()
+    }
+
+    structure_json["out_degrees"] = {
+        f"{a},{b}": value
+        for (a, b), value
+        in structure["out_degrees"].items()
+    }
+
     payload = {
         "version": VERSION,
 
@@ -990,7 +1006,7 @@ def write_outputs(
             ),
         },
 
-        "structure": structure,
+        "structure": structure_json,
 
         "trace": trace,
 
