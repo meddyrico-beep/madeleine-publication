@@ -1,0 +1,354 @@
+{
+  "version": "LAB-D2-DMO004-AUDIT-v1",
+  "git_head": "ea34a0ec5f8d78e8807b5ae37313e930cdeb200f",
+  "criteria": {
+    "region_parametric": {
+      "status": "PASS",
+      "evidence": {
+        "checks": {
+          "core_points_declared_9": true,
+          "core_passes_9": true,
+          "region_boolean_true": true,
+          "nine_core_records_found": true,
+          "all_core_point_pass": true,
+          "baseline_in_core": true,
+          "baseline_point_pass": true
+        },
+        "core_records": 9,
+        "declared_core_passes": 9
+      }
+    },
+    "seed_agreement": {
+      "status": "PASS",
+      "evidence": {
+        "checks": {
+          "nine_core_records": true,
+          "every_core_point_at_least_7_of_8": true
+        },
+        "seed_pass_counts": {
+          "beta=-0.05|epsilon=0.00": 8,
+          "beta=-0.05|epsilon=0.05": 8,
+          "beta=-0.05|epsilon=0.10": 8,
+          "beta=+0.00|epsilon=0.00": 8,
+          "beta=+0.00|epsilon=0.05": 8,
+          "beta=+0.00|epsilon=0.10": 8,
+          "beta=+0.05|epsilon=0.00": 8,
+          "beta=+0.05|epsilon=0.05": 8,
+          "beta=+0.05|epsilon=0.10": 8
+        }
+      }
+    },
+    "null_separation": {
+      "status": "PASS",
+      "evidence": {
+        "checks": {
+          "enough_contributing_seed_records": true,
+          "all_contributing_records_separated": true
+        },
+        "records_checked": 72,
+        "minimum_required": 63,
+        "failures": []
+      }
+    },
+    "explicit_failure_criterion": {
+      "status": "PASS",
+      "evidence": {
+        "checks": {
+          "failure_documents_predate_results": true,
+          "thresholds_declare_7_of_8": true,
+          "ablation_gate_has_failure_counts": true,
+          "atlas_has_point_fail": true
+        },
+        "git_order": [
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_THRESHOLDS_v1.md",
+            "later_file": "lab/results/LAB-FEN-001_D2_v1_results.json",
+            "earlier_commit": "33e816ffe0250f826bff2b57291233e58f9cea00",
+            "later_commit": "3e984cdbc124b10f1ce503dda25585402d868f95"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_SPEC_v1.md",
+            "later_file": "lab/results/LAB-FEN-001_D2_v1_results.json",
+            "earlier_commit": "cd0f30b433d7e65dfd11ff64862688d29ddf9a8a",
+            "later_commit": "3e984cdbc124b10f1ce503dda25585402d868f95"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_ABLATIONS_SPEC_v1.md",
+            "later_file": "lab/results/LAB-FEN-001_D2_ABLATIONS_v1_results.json",
+            "earlier_commit": "58274a0471d99a7e5c4d77e3a41f48abcb00dc61",
+            "later_commit": "79d047f955ecfa6ad44de7cfb98963c5e09491d3"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_ABLATIONS_GATE_v1.md",
+            "later_file": "lab/results/LAB-FEN-001_D2_ABLATIONS_v1_results.json",
+            "earlier_commit": "df3b7a976638dfe6954364ead09252fb00687145",
+            "later_commit": "79d047f955ecfa6ad44de7cfb98963c5e09491d3"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_ATLAS_SPEC_v1.md",
+            "later_file": "lab/results/LAB-FEN-001_D2_ATLAS_v1_results.json",
+            "earlier_commit": "bcf027f42d600911e275899bef81a08225b7814f",
+            "later_commit": "5dd3d16d836c396baa3771680db8d421d9f0aad4"
+          }
+        ]
+      }
+    },
+    "non_reducible": {
+      "status": "PASS",
+      "evidence": {
+        "checks": {
+          "no_past_full_passes_le_1": true,
+          "randomized_past_full_passes_le_1": true,
+          "deterministic_full_passes_lt_7": true,
+          "deterministic_U_collapses_ge_7": true,
+          "d0_generator_has_no_previous_state": true,
+          "d0_negative_control_passed": true,
+          "d1_is_deterministic": true,
+          "d1_history_dependency": true,
+          "d1_periodic_control": true,
+          "d1_positive_control_passed": true,
+          "d2_full_signature_passed": true,
+          "d2_retains_novelty_and_aperiodicity": true
+        },
+        "allowed_interpretation": "NO REDUCIBLE A LOS LIMITES INTERNOS ENSAYADOS EN LAB-FEN-001-v1"
+      }
+    },
+    "frozen_rule": {
+      "status": "PASS",
+      "evidence": {
+        "git_order": [
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_THRESHOLDS_v1.md",
+            "later_file": "lab/results/LAB-FEN-001_D2_v1_results.json",
+            "earlier_commit": "33e816ffe0250f826bff2b57291233e58f9cea00",
+            "later_commit": "3e984cdbc124b10f1ce503dda25585402d868f95"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_SPEC_v1.md",
+            "later_file": "lab/results/LAB-FEN-001_D2_v1_results.json",
+            "earlier_commit": "cd0f30b433d7e65dfd11ff64862688d29ddf9a8a",
+            "later_commit": "3e984cdbc124b10f1ce503dda25585402d868f95"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2.py",
+            "later_file": "lab/results/LAB-FEN-001_D2_v1_results.json",
+            "earlier_commit": "4d9e6772da2be6eb66fa81f431adcd6e4e5831ef",
+            "later_commit": "3e984cdbc124b10f1ce503dda25585402d868f95"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_ABLATIONS_SPEC_v1.md",
+            "later_file": "lab/results/LAB-FEN-001_D2_ABLATIONS_v1_results.json",
+            "earlier_commit": "58274a0471d99a7e5c4d77e3a41f48abcb00dc61",
+            "later_commit": "79d047f955ecfa6ad44de7cfb98963c5e09491d3"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_ABLATIONS_GATE_v1.md",
+            "later_file": "lab/results/LAB-FEN-001_D2_ABLATIONS_v1_results.json",
+            "earlier_commit": "df3b7a976638dfe6954364ead09252fb00687145",
+            "later_commit": "79d047f955ecfa6ad44de7cfb98963c5e09491d3"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_ABLATIONS.py",
+            "later_file": "lab/results/LAB-FEN-001_D2_ABLATIONS_v1_results.json",
+            "earlier_commit": "e7eeca433239bdb9897d1a5f0e4ee80062d413c8",
+            "later_commit": "79d047f955ecfa6ad44de7cfb98963c5e09491d3"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_ATLAS_SPEC_v1.md",
+            "later_file": "lab/results/LAB-FEN-001_D2_ATLAS_v1_results.json",
+            "earlier_commit": "bcf027f42d600911e275899bef81a08225b7814f",
+            "later_commit": "5dd3d16d836c396baa3771680db8d421d9f0aad4"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_ATLAS.py",
+            "later_file": "lab/results/LAB-FEN-001_D2_ATLAS_v1_results.json",
+            "earlier_commit": "2ddaf6d7e933f9423e221a6fe1ee2b8f1d7795d3",
+            "later_commit": "5dd3d16d836c396baa3771680db8d421d9f0aad4"
+          },
+          {
+            "ok": true,
+            "earlier_file": "lab/LAB-FEN-001_D2_DMO004_AUDIT_SPEC_v1.md",
+            "later_file": "lab/LAB-FEN-001_D2_DMO004_AUDIT.py",
+            "earlier_commit": "72b67f269072f72b12a369e9f4cdf9ef0679598d",
+            "later_commit": "ea34a0ec5f8d78e8807b5ae37313e930cdeb200f"
+          }
+        ]
+      }
+    },
+    "complete_trace": {
+      "status": "PASS",
+      "evidence": {
+        "checks": {
+          "all_required_paths_exist": true,
+          "same_seed_contract": true,
+          "same_length_contract": true,
+          "per_seed_series_hashes_present": true,
+          "embedded_trace_hashes_match": true,
+          "result_document_hashes_match": true,
+          "major_artifacts_have_git_commits": true,
+          "repo_clean_before_audit_output": true
+        },
+        "missing_paths": [],
+        "d2_trace_hashes": {
+          "d2_spec": {
+            "declared": "b597af378cf58fc9d16f2c63e86da582274708b084d42adb589c755db319f78e",
+            "actual": "b597af378cf58fc9d16f2c63e86da582274708b084d42adb589c755db319f78e",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "thresholds": {
+            "declared": "6a15a5456f8094be42dfc30fbb550e89d49b4385e7f7f833b12f36f06e224aaa",
+            "actual": "6a15a5456f8094be42dfc30fbb550e89d49b4385e7f7f833b12f36f06e224aaa",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "metrics_spec": {
+            "declared": "ac44ca5cc59a6662961a45d354d92deae94a41f5fd03a26111cd18a7f0fbde46",
+            "actual": "ac44ca5cc59a6662961a45d354d92deae94a41f5fd03a26111cd18a7f0fbde46",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "d0_instrument": {
+            "declared": "9c4073ed6b4c2e4e5d2e8f00b6e63e927d1f5d609c2d3c0359353ac9565cf247",
+            "actual": "9c4073ed6b4c2e4e5d2e8f00b6e63e927d1f5d609c2d3c0359353ac9565cf247",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "metrics_executable": {
+            "declared": "587ff9e9aee9977d8d05713a279f740fbfca1ab5cb6e2d11f8b6edbce8964439",
+            "actual": "587ff9e9aee9977d8d05713a279f740fbfca1ab5cb6e2d11f8b6edbce8964439",
+            "valid_declared_sha": true,
+            "match": true
+          }
+        },
+        "ablation_trace_hashes": {
+          "ablation_spec": {
+            "declared": "ae8987e23df69052dd3d0adedeea2fcfa35df93fd5bec4b4731832e43d36f600",
+            "actual": "ae8987e23df69052dd3d0adedeea2fcfa35df93fd5bec4b4731832e43d36f600",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "ablation_gate": {
+            "declared": "1d70367355657d9e72244eebd65479b6d09f7f8ecc644db8d6e487e6d125d9c2",
+            "actual": "1d70367355657d9e72244eebd65479b6d09f7f8ecc644db8d6e487e6d125d9c2",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "d2_executable": {
+            "declared": "8d88c8f8ba2b6fc145b140059b86d03868fc79817327a101af3b88203ec9c792",
+            "actual": "8d88c8f8ba2b6fc145b140059b86d03868fc79817327a101af3b88203ec9c792",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "d2_result": {
+            "declared": "aee94f475b6b3eb0e3e0a3eeb902b1354d7a7dfe54d6e490737492f811ab1ecc",
+            "actual": "aee94f475b6b3eb0e3e0a3eeb902b1354d7a7dfe54d6e490737492f811ab1ecc",
+            "valid_declared_sha": true,
+            "match": true
+          }
+        },
+        "atlas_trace_hashes": {
+          "atlas_spec": {
+            "declared": "5c66251d1d257de19d6c755a09407f7df6c45dff480ba70155b15e475f5f0b49",
+            "actual": "5c66251d1d257de19d6c755a09407f7df6c45dff480ba70155b15e475f5f0b49",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "atlas_executable": {
+            "declared": "26633afcf209ca46b457f1214c9b04ba779d89cc4cef9c5487b83a088034422b",
+            "actual": "26633afcf209ca46b457f1214c9b04ba779d89cc4cef9c5487b83a088034422b",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "d2_executable": {
+            "declared": "8d88c8f8ba2b6fc145b140059b86d03868fc79817327a101af3b88203ec9c792",
+            "actual": "8d88c8f8ba2b6fc145b140059b86d03868fc79817327a101af3b88203ec9c792",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "d2_result": {
+            "declared": "aee94f475b6b3eb0e3e0a3eeb902b1354d7a7dfe54d6e490737492f811ab1ecc",
+            "actual": "aee94f475b6b3eb0e3e0a3eeb902b1354d7a7dfe54d6e490737492f811ab1ecc",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "thresholds": {
+            "declared": "6a15a5456f8094be42dfc30fbb550e89d49b4385e7f7f833b12f36f06e224aaa",
+            "actual": "6a15a5456f8094be42dfc30fbb550e89d49b4385e7f7f833b12f36f06e224aaa",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "metrics_spec": {
+            "declared": "ac44ca5cc59a6662961a45d354d92deae94a41f5fd03a26111cd18a7f0fbde46",
+            "actual": "ac44ca5cc59a6662961a45d354d92deae94a41f5fd03a26111cd18a7f0fbde46",
+            "valid_declared_sha": true,
+            "match": true
+          },
+          "metrics_executable": {
+            "declared": "587ff9e9aee9977d8d05713a279f740fbfca1ab5cb6e2d11f8b6edbce8964439",
+            "actual": "587ff9e9aee9977d8d05713a279f740fbfca1ab5cb6e2d11f8b6edbce8964439",
+            "valid_declared_sha": true,
+            "match": true
+          }
+        },
+        "document_hashes": {
+          "ablation_json": {
+            "artifact": "lab/results/LAB-FEN-001_D2_ABLATIONS_v1_results.json",
+            "sha256": "21cfdfc4274be2c57725789b905b6b9432c37ec111c283ef6a21f51e86fc65b5",
+            "present_in_document": true
+          },
+          "ablation_series": {
+            "artifact": "lab/results/LAB-FEN-001_D2_ABLATIONS_v1_series.csv.gz",
+            "sha256": "3f7aea8917b2a7c1b0dbcaaea606dbf44020a2cc427331c1589c4e2281b54c76",
+            "present_in_document": true
+          },
+          "atlas_json": {
+            "artifact": "lab/results/LAB-FEN-001_D2_ATLAS_v1_results.json",
+            "sha256": "8dab901a4aff3d5274fc74ce5233fd10e37adc2270223cce4e343b81701e7723",
+            "present_in_document": true
+          },
+          "atlas_series": {
+            "artifact": "lab/results/LAB-FEN-001_D2_ATLAS_v1_series.csv.gz",
+            "sha256": "f3ac6c0f91dc83dfa5aef3ad61bf072088f165e144599b12d0654d5e6a605246",
+            "present_in_document": true
+          }
+        },
+        "commits": {
+          "lab/LAB-FEN-001_PROTOCOL.md": "6228178052c5c73b4629e2248af234684ea0f661",
+          "lab/LAB-FEN-001_THRESHOLDS_v1.md": "33e816ffe0250f826bff2b57291233e58f9cea00",
+          "lab/LAB-FEN-001_D2_SPEC_v1.md": "cd0f30b433d7e65dfd11ff64862688d29ddf9a8a",
+          "lab/LAB-FEN-001_D2.py": "4d9e6772da2be6eb66fa81f431adcd6e4e5831ef",
+          "lab/results/LAB-FEN-001_D2_v1_results.json": "3e984cdbc124b10f1ce503dda25585402d868f95",
+          "lab/LAB-FEN-001_D2_ABLATIONS_SPEC_v1.md": "58274a0471d99a7e5c4d77e3a41f48abcb00dc61",
+          "lab/LAB-FEN-001_D2_ABLATIONS_GATE_v1.md": "df3b7a976638dfe6954364ead09252fb00687145",
+          "lab/LAB-FEN-001_D2_ABLATIONS.py": "e7eeca433239bdb9897d1a5f0e4ee80062d413c8",
+          "lab/results/LAB-FEN-001_D2_ABLATIONS_v1_results.json": "79d047f955ecfa6ad44de7cfb98963c5e09491d3",
+          "lab/LAB-FEN-001_D2_ATLAS_SPEC_v1.md": "bcf027f42d600911e275899bef81a08225b7814f",
+          "lab/LAB-FEN-001_D2_ATLAS.py": "2ddaf6d7e933f9423e221a6fe1ee2b8f1d7795d3",
+          "lab/results/LAB-FEN-001_D2_ATLAS_v1_results.json": "5dd3d16d836c396baa3771680db8d421d9f0aad4",
+          "lab/LAB-FEN-001_D2_DMO004_AUDIT_SPEC_v1.md": "72b67f269072f72b12a369e9f4cdf9ef0679598d",
+          "lab/LAB-FEN-001_D2_DMO004_AUDIT.py": "ea34a0ec5f8d78e8807b5ae37313e930cdeb200f"
+        }
+      }
+    }
+  },
+  "summary": {
+    "pass_count": 7,
+    "fail_count": 0,
+    "insufficient_count": 0,
+    "verdict": "DMO-004 PASS"
+  }
+}
