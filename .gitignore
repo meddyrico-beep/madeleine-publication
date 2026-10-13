@@ -36,3 +36,6 @@ __pycache__/
 .pytest_cache/
 *.tmp
 *.temp
+
+# Generated release packages
+release/
