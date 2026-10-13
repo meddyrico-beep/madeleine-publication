@@ -116,14 +116,15 @@ La fase experimental LAB-FEN-001 de esta publicación está cerrada.
 
 Los gap fixes científicos, bibliográficos, de claims, consistencia notacional y revisión visual han sido completados para la fase actual.
 
-La preparación de release final exige todavía:
+La infraestructura de release incluye:
 
-- manifest final;
-- hashes finales;
-- snapshot reproducible;
-- paquete ZIP de release;
-- tag/version;
-- re-auditoría global de publicación.
+- manifest dinámico de artefactos;
+- hashes SHA256;
+- snapshot reproducible ligado a Git HEAD;
+- paquete ZIP verificable;
+- guía pública de reproducción.
+
+La declaración formal de un release candidate se realiza únicamente después de aplicar la re-auditoría global congelada y asociar la versión/tag correspondiente al mismo estado candidato.
 
 ## Historial
 
