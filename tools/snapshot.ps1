@@ -1,23 +1,96 @@
+param()
+
 $ErrorActionPreference = "Stop"
+
 $RepoRoot = Split-Path -Parent $PSScriptRoot
 $OutDir = Join-Path $RepoRoot "artifacts\snapshots"
-New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
 
-$ts = Get-Date -Format "yyyyMMdd_HHmmss"
-$zip = Join-Path $OutDir ("snapshot_" + $ts + ".zip")
-$tmp = Join-Path $env:TEMP ("madeleine_publication_" + $ts)
+Push-Location $RepoRoot
+try {
+    if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
+        throw "Git no está disponible en PATH."
+    }
 
-New-Item -ItemType Directory -Force -Path $tmp | Out-Null
-Copy-Item (Join-Path $RepoRoot "manuscript") (Join-Path $tmp "manuscript") -Recurse -Force
-Copy-Item (Join-Path $RepoRoot "tools") (Join-Path $tmp "tools") -Recurse -Force
-Copy-Item (Join-Path $RepoRoot "README.md") (Join-Path $tmp "README.md") -Force
-Copy-Item (Join-Path $RepoRoot "MANIFESTO.md") (Join-Path $tmp "MANIFESTO.md") -Force
-Copy-Item (Join-Path $RepoRoot "ADMISSION_RULES.md") (Join-Path $tmp "ADMISSION_RULES.md") -Force
+    $status = @(git status --porcelain)
+    if ($LASTEXITCODE -ne 0) {
+        throw "No se pudo consultar git status."
+    }
 
-Compress-Archive -Path (Join-Path $tmp "*") -DestinationPath $zip -Force
-$hash = Get-FileHash -Algorithm SHA256 $zip
-$hashLine = "SHA256  $($hash.Hash)  $(Split-Path $zip -Leaf)"
-$hashLine | Set-Content -Path ($zip + ".sha256.txt") -Encoding utf8
+    if ($status.Count -gt 0) {
+        throw "El snapshot requiere un árbol Git limpio."
+    }
 
-Remove-Item $tmp -Recurse -Force
-Write-Host "OK SNAPSHOT: $zip"
+    $head = (git rev-parse HEAD).Trim()
+    if ($LASTEXITCODE -ne 0) {
+        throw "No se pudo resolver HEAD."
+    }
+
+    $short = (git rev-parse --short=12 HEAD).Trim()
+    $branch = (git rev-parse --abbrev-ref HEAD).Trim()
+
+    New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
+
+    $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
+    $zipName = "snapshot_${timestamp}_${short}.zip"
+    $zipPath = Join-Path $OutDir $zipName
+
+    $snapshotPaths = @(
+        ".gitignore",
+        "README.md",
+        "REPRODUCIBILITY.md",
+        "MANIFESTO.md",
+        "ADMISSION_RULES.md",
+        "manuscript",
+        "lab",
+        "demos",
+        "notes",
+        "tests",
+        "tools"
+    )
+
+    $gitArgs = @(
+        "archive",
+        "--format=zip",
+        "--output=$zipPath",
+        "HEAD",
+        "--"
+    ) + $snapshotPaths
+
+    & git @gitArgs
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "Falló git archive."
+    }
+
+    if (-not (Test-Path $zipPath)) {
+        throw "El ZIP esperado no fue creado."
+    }
+
+    $hash = Get-FileHash -Algorithm SHA256 $zipPath
+    $metaPath = $zipPath + ".sha256.txt"
+
+    $meta = @(
+        "SHA256  $($hash.Hash)  $zipName",
+        "HEAD    $head",
+        "BRANCH  $branch",
+        "CREATED_LOCAL  $(Get-Date -Format "yyyy-MM-ddTHH:mm:ssK")"
+    )
+
+    $utf8 = New-Object System.Text.UTF8Encoding($false)
+
+    [System.IO.File]::WriteAllText(
+        $metaPath,
+        (($meta -join "`n") + "`n"),
+        $utf8
+    )
+
+    Write-Host "OK SNAPSHOT"
+    Write-Host "ZIP:    $zipPath"
+    Write-Host "SHA256: $($hash.Hash)"
+    Write-Host "HEAD:   $head"
+    Write-Host "BRANCH: $branch"
+    Write-Host "META:   $metaPath"
+}
+finally {
+    Pop-Location
+}
