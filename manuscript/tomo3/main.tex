@@ -2,6 +2,9 @@
 \input{../shared/madeleine_style.tex}
 \input{../shared/macros.tex}
 \input{../shared/notation.tex}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=authoryear,sorting=nyt]{biblatex}
+\addbibresource{../shared/references.bib}
 
 \begin{document}
 \frontmatter
@@ -39,6 +42,8 @@ El Tomo III organiza el paso desde el canon intermedio hacia tratamiento metodol
 \input{sections/21_criterio_de_continuidad_reapertura_y_nueva_fase.tex}
 \input{sections/22_criterio_de_marco_estable_de_evolucion_futura.tex}
 \input{sections/23_criterio_de_cierre_arquitectonico_del_horizonte_futuro.tex}
+
+\printbibliography[heading=bibintoc,title={Referencias}]
 
 \end{document}
 
