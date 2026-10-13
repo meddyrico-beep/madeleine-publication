@@ -39,8 +39,23 @@ function Build-One([string]$Name) {
         }
 
         $pdf = Join-Path $work "main.pdf"
-        $dst = Join-Path $RepoRoot ("artifacts\pdf\" + $Name + ".pdf")
+
+        if ($Name -eq "base_axiomatica") {
+            $dst = Join-Path $RepoRoot "artifacts\pdf\internal\base_axiomatica.pdf"
+            $legacyBase = Join-Path $RepoRoot "artifacts\pdf\base_axiomatica.pdf"
+        }
+        else {
+            $dst = Join-Path $RepoRoot ("artifacts\pdf\" + $Name + ".pdf")
+            $legacyBase = $null
+        }
+
+        New-Item -ItemType Directory -Force -Path (Split-Path -Parent $dst) | Out-Null
         Copy-Item $pdf $dst -Force
+
+        if ($legacyBase -and (Test-Path $legacyBase)) {
+            Remove-Item $legacyBase -Force
+        }
+
         Write-Host "OK PDF: $dst"
     }
     finally {
