@@ -100,6 +100,8 @@ Los scripts, especificaciones y resultados deben leerse de forma conjunta.
 
 Los artefactos numéricos congelados no deben recalibrarse silenciosamente ni reinterpretarse fuera del protocolo que los produjo.
 
+Guía detallada de reproducción: [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+
 ## Convenciones principales
 
 - origen canónico conceptual: `sub₀`
@@ -116,7 +118,6 @@ Los gap fixes científicos, bibliográficos, de claims, consistencia notacional 
 
 La preparación de release final exige todavía:
 
-- instrucciones completas de reproducción;
 - manifest final;
 - hashes finales;
 - snapshot reproducible;
