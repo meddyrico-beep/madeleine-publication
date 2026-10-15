@@ -122,6 +122,23 @@ try {
         Copy-Item $source $dest -Force
     }
 
+    $metadataFiles = @(
+        "AUTHORS.md",
+        "CITATION.cff",
+        "RIGHTS.md"
+    )
+
+    foreach ($metadataFile in $metadataFiles) {
+        $source = Join-Path $RepoRoot $metadataFile
+        $dest = Join-Path $packageDir $metadataFile
+
+        if (-not (Test-Path $source)) {
+            throw "Falta metadata de publicación: $metadataFile"
+        }
+
+        Copy-Item $source $dest -Force
+    }
+
     Copy-Item $snapshot.FullName `
         (Join-Path $packageDir ("snapshot\" + $snapshot.Name)) `
         -Force
@@ -146,6 +163,11 @@ try {
         "INTERNAL TECHNICAL SUPPORT",
         "- internal/MADELEINE_Base_Axiomatica_Internal.pdf",
         "",
+        "PUBLICATION METADATA",
+        "- AUTHORS.md",
+        "- CITATION.cff",
+        "- RIGHTS.md",
+        "",
         "REPRODUCIBLE SOURCE SNAPSHOT",
         "- snapshot/$($snapshot.Name)",
         "- snapshot/$(Split-Path $snapshotMeta -Leaf)",
@@ -154,7 +176,7 @@ try {
         "- MANIFEST_PUBLICATION.txt",
         "- SHA256SUMS.txt",
         "",
-        "The source snapshot contains REPRODUCIBILITY.md.",
+        "The source snapshot contains REPRODUCIBILITY.md and the publication metadata files.",
         "",
         "Scientific scope:",
         "Internal formal and numerical results do not by themselves constitute external physical validation."
@@ -184,6 +206,17 @@ try {
         $manifestLines += "$($artifact.Role)  $rel"
         $manifestLines += "SIZE     $($file.Length)"
         $manifestLines += "SHA256   $hash"
+        $manifestLines += ""
+    }
+
+    foreach ($metadataFile in $metadataFiles) {
+        $dest = Join-Path $packageDir $metadataFile
+        $file = Get-Item $dest
+        $hash = (Get-FileHash -Algorithm SHA256 $dest).Hash
+
+        $manifestLines += "METADATA  $metadataFile"
+        $manifestLines += "SIZE      $($file.Length)"
+        $manifestLines += "SHA256    $hash"
         $manifestLines += ""
     }
 

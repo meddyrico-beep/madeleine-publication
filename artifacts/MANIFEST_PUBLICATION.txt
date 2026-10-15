@@ -26,6 +26,11 @@ Reproducibility:
 - notes/
 - tools/
 
+Publication metadata:
+- AUTHORS.md
+- CITATION.cff
+- RIGHTS.md
+
 Release rule:
 The final distributable package must be generated from a clean Git tree.
 
@@ -38,6 +43,7 @@ The generated release manifest records:
 - creation timestamp
 - packaged artifact sizes
 - SHA256 hashes
+- publication metadata and metadata hashes
 - exact reproducible snapshot
 
 The generated package also contains SHA256SUMS.txt.
