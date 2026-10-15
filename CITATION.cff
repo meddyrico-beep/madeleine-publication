@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use or discuss MADELEINE, please cite the author and the specific archived version or release used."
+title: "MADELEINE"
+type: dataset
+authors:
+  - family-names: "Rico Ochoa"
+    given-names: "David"
+abstract: "MADELEINE is a formal, numerical and methodological research corpus containing manuscripts, reproducible source material, demonstrations and versioned numerical evidence. Its current results are internal to declared formal and numerical protocols and do not by themselves constitute external physical validation."
