@@ -5,4 +5,6 @@ type: dataset
 authors:
   - family-names: "Rico Ochoa"
     given-names: "David"
+version: "0.2.1"
+date-released: "2026-10-15"
 abstract: "MADELEINE is a formal, numerical and methodological research corpus containing manuscripts, reproducible source material, demonstrations and versioned numerical evidence. Its current results are internal to declared formal and numerical protocols and do not by themselves constitute external physical validation."
