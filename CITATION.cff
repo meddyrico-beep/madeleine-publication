@@ -7,4 +7,13 @@ authors:
     given-names: "David"
 version: "0.2.1"
 date-released: "2026-10-15"
+doi: "10.5281/zenodo.23450774"
+repository-code: "https://github.com/meddyrico-beep/madeleine-publication"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23450774"
+    description: "Archived DOI for the frozen MADELEINE v0.2.1 release."
+  - type: doi
+    value: "10.5281/zenodo.23450773"
+    description: "Zenodo DOI representing all archived versions of MADELEINE."
 abstract: "MADELEINE is a formal, numerical and methodological research corpus containing manuscripts, reproducible source material, demonstrations and versioned numerical evidence. Its current results are internal to declared formal and numerical protocols and do not by themselves constitute external physical validation."

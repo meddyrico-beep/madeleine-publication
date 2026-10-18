@@ -126,6 +126,25 @@ La infraestructura de release incluye:
 
 La declaración formal de un release candidate se realiza únicamente después de aplicar la re-auditoría global congelada y asociar la versión/tag correspondiente al mismo estado candidato.
 
+## DOI y citación
+
+La versión pública congelada **MADELEINE v0.2.1** está archivada en Zenodo.
+
+- DOI de esta versión: [10.5281/zenodo.23450774](https://doi.org/10.5281/zenodo.23450774)
+- DOI de todas las versiones: [10.5281/zenodo.23450773](https://doi.org/10.5281/zenodo.23450773)
+- Git tag congelado: `v0.2.1`
+- commit congelado: `fee2c31cfa17159a4075e1cbfbfa7e2fceba9c4b`
+- GitHub Release: [MADELEINE v0.2.1](https://github.com/meddyrico-beep/madeleine-publication/releases/tag/v0.2.1)
+- SHA256 del paquete canónico: `49E9B23EA8EDDA5B43AC749BDBB30873FF38B31E17E60265E14CBC6707711375`
+
+Para citar específicamente la versión congelada `v0.2.1`, debe utilizarse el DOI de versión `10.5281/zenodo.23450774`.
+
+El DOI `10.5281/zenodo.23450773` representa la familia de versiones archivadas de MADELEINE y no únicamente este release congelado.
+
+El estado actual de `main` puede incorporar documentación post-publicación sin modificar el objeto histórico identificado por el tag `v0.2.1`.
+
+Registro completo de preservación: [notes/PUBLICATION_DEPOSIT_RECORD_v0.2.1.md](notes/PUBLICATION_DEPOSIT_RECORD_v0.2.1.md).
+
 ## Historial
 
 Las releases y snapshots anteriores se conservan como historia verificable.
