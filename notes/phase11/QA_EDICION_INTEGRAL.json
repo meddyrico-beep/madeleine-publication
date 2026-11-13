@@ -1,0 +1,15 @@
+{
+  "pdf": "/mnt/data/F11_EDICION_INTEGRAL/MADELEINE_FASE_11_AUDITORIA_Y_DESARROLLO_COMPLETO_001_031.pdf",
+  "pages": 180,
+  "parts_pages": [
+    173,
+    4,
+    3
+  ],
+  "extracted_words": 70245,
+  "pages_with_less_than_80_characters": [],
+  "out_of_page_text_blocks": [],
+  "sha256": "628041DCDCFEBE2D2F8EF6EFF7CC23D2CC8C5A5341312D13CD5D23738A1831F6",
+  "bookmarks": 71,
+  "source_coverage": "F11(2).txt lines 1-19704 (whole source) + complete X674 and X675"
+}
