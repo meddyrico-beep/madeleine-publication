@@ -1,0 +1,142 @@
+{
+  "source_sha": "8DD67FE775246E8BA095DC64C2E6B1C60540D5C37B69FFE59B60C0F8924FB424",
+  "source1_sha": "A2AD1BC8D7C7DED185D034E0D94836C099D26AC9CCD84F090983FB6AF629910C",
+  "audit_sha": "457D1E07BAF811DC6208840E7AAA0CAA825149612E2634F68B3EE80A5478CCEB",
+  "closure_sha": "5A5EBE8B8D35EF8197BC9FF7F9C05E4D35E41A75678429CC6137911F96B41C19",
+  "x674_package_sha": "01B4CD7CE829D0547045D4CE18A4402B2C614AC47410FDB80AD9A6DC11BA9665",
+  "segments": {
+    "001": {
+      "source_line_start": 1,
+      "source_line_end": 569,
+      "source_chars": 9262
+    },
+    "002": {
+      "source_line_start": 570,
+      "source_line_end": 1254,
+      "source_chars": 17598
+    },
+    "003": {
+      "source_line_start": 1255,
+      "source_line_end": 2105,
+      "source_chars": 19201
+    },
+    "004": {
+      "source_line_start": 2106,
+      "source_line_end": 3060,
+      "source_chars": 22304
+    },
+    "005": {
+      "source_line_start": 3061,
+      "source_line_end": 3792,
+      "source_chars": 20511
+    },
+    "006": {
+      "source_line_start": 3793,
+      "source_line_end": 4514,
+      "source_chars": 19727
+    },
+    "008": {
+      "source_line_start": 4515,
+      "source_line_end": 5133,
+      "source_chars": 15636
+    },
+    "009": {
+      "source_line_start": 5134,
+      "source_line_end": 5678,
+      "source_chars": 15444
+    },
+    "012": {
+      "source_line_start": 5679,
+      "source_line_end": 6532,
+      "source_chars": 13506
+    },
+    "013": {
+      "source_line_start": 6533,
+      "source_line_end": 8372,
+      "source_chars": 16039
+    },
+    "014": {
+      "source_line_start": 8373,
+      "source_line_end": 9054,
+      "source_chars": 15118
+    },
+    "015": {
+      "source_line_start": 9055,
+      "source_line_end": 9846,
+      "source_chars": 15624
+    },
+    "016": {
+      "source_line_start": 9847,
+      "source_line_end": 10427,
+      "source_chars": 16604
+    },
+    "017": {
+      "source_line_start": 10428,
+      "source_line_end": 11584,
+      "source_chars": 15875
+    },
+    "018": {
+      "source_line_start": 11585,
+      "source_line_end": 12413,
+      "source_chars": 17652
+    },
+    "019": {
+      "source_line_start": 12414,
+      "source_line_end": 13336,
+      "source_chars": 16615
+    },
+    "022": {
+      "source_line_start": 13337,
+      "source_line_end": 13873,
+      "source_chars": 15407
+    },
+    "023": {
+      "source_line_start": 13874,
+      "source_line_end": 14630,
+      "source_chars": 16034
+    },
+    "024": {
+      "source_line_start": 14631,
+      "source_line_end": 15399,
+      "source_chars": 15383
+    },
+    "025": {
+      "source_line_start": 15400,
+      "source_line_end": 15880,
+      "source_chars": 17673
+    },
+    "026": {
+      "source_line_start": 15881,
+      "source_line_end": 16473,
+      "source_chars": 16373
+    },
+    "027": {
+      "source_line_start": 16474,
+      "source_line_end": 17171,
+      "source_chars": 17713
+    },
+    "028": {
+      "source_line_start": 17172,
+      "source_line_end": 18020,
+      "source_chars": 19169
+    },
+    "029": {
+      "source_line_start": 18021,
+      "source_line_end": 18648,
+      "source_chars": 17581
+    },
+    "030": {
+      "source_line_start": 18649,
+      "source_line_end": 19704,
+      "source_chars": 20688
+    }
+  },
+  "missing_primary": [
+    7,
+    10,
+    11,
+    20,
+    21
+  ],
+  "pdf_main_pages": 173
+}
